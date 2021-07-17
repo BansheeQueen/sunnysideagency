@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    font-size: 20px;
+}
+
+.container-fluid {
+    max-width: 1440px;
+    margin: auto;
+}
+.header {
+    position: relative;
+    
+}
+
+img {width: 100%;}
+
+h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-family: 'Fraunces';
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--white);
+}
+
+h1 img {
+    display: block;
+    width: 35px;
+    margin: auto;
+    margin-top: 130px;
+}
+
