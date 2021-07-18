@@ -11,6 +11,7 @@
     --gblue: hsl(210, 4%, 67%);
     --vdblue: hsl(212, 27%, 19%);
     --vdgblue: hsl(213, 9%, 39%);
+    --dmcyan: hsl(168, 34%, 41%);
 }
 
 
@@ -32,6 +33,12 @@ nav.navbar {
     margin: 0 15px;
     padding: 10px 25px;
     color: var(--white);
+    
+}
+
+li.nav-item {
+    width: 125px;
+    text-align: center;
 }
 
 .nav-item a.nav-link.colors {
@@ -173,6 +180,10 @@ p.position-absolute {
 .green {color: var(--dcyan); font-weight: 600;}
 .blue {color: var(--dblue); font-weight: 600;}
 
+.card-group {
+    margin-bottom: 10%;
+}
+
 .card {background: transparent!important}
 
 img.card-img-top {
@@ -189,3 +200,33 @@ img.card-img-top {
     font-weight: 600;
     color: var(--gblue);
 text-align: center;}
+
+div.footer {background: var(--dmcyan);
+}
+
+img.footer {
+    filter: invert(52%) sepia(21%) saturate(950%) hue-rotate(101deg) brightness(59%) contrast(99%);
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+
+img.icon {width: 25px;
+    margin: 2% 0.5%;
+    margin-bottom: 5%;
+transition: all 0.2s linear;}
+
+img.icon:hover {
+    filter: invert(50%) sepia(0%) saturate(0) hue-rotate(0deg) brightness(355%) contrast(100%);
+}
+
+
+a.links {
+    text-decoration: none;
+    color: var(--dcyan);
+    font-weight: 500;
+    transition: all 0.2s linear;
+}
+
+a.links:hover {color: var(--white)}
