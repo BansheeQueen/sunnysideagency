@@ -12,7 +12,7 @@ The designs were created to the following widths:
 ### Primary
 
 - Soft red: hsl(7, 99%, 70%)
-- Yellow: hsl(51, 100%, 49%)
+- Yellow:hsl(51, 100%, 49%) 
 - Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
 - Dark blue (photography text): hsl(198, 62%, 26%)
 - Dark moderate cyan (footer): hsl(168, 34%, 41%)

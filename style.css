@@ -4,6 +4,8 @@
 :root {
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
+    --yellow: hsl(51, 100%, 49%);
+    --red: hsl(7, 99%, 70%);
 }
 
 
@@ -71,15 +73,63 @@ h1 img {
     margin-top: 2%;
 }
 
+h2 {font-family: 'Fraunces';}
+
 .row {
     align-items: center;
     background-color: hsla(51, 100%, 49%, 0.05);
 }
 
-.row a, .row p, .row h2 {
-    padding: 0px 20%;
-}
-
 .desc img {width: 100%;}
 
 .col, .col-6, .col-12 {margin: 0!important; padding: 0!important}
+
+a.yellow, a.yellow:hover, a.pink, a.pink:hover {
+    position: relative;
+    font-family: 'Fraunces';
+    text-transform: uppercase;
+    color: black;
+    font-weight: 900;
+    text-decoration: none;
+    margin: 2%;
+}
+
+a.yellow:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 65%;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: 8px;
+    background: hsla(51, 100%, 49%, 0.3);
+    border-radius: 12%;
+    z-index: -1;
+    transition: 0.2s linear all;
+}
+
+a.pink:after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 65%;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: 8px;
+    background: hsla(7, 99%, 70%, 0.3);
+    border-radius: 12%;
+    z-index: -1;
+    transition: 0.2s linear all;
+}
+
+a.yellow:hover:after {
+    background-color: var(--yellow);
+}
+
+a.pinkgit :hover:after {
+    background-color: var(--red);
+}
+
+.desc, .desc2 {
+    padding: 10%!important;
+}
