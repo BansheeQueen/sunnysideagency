@@ -3,6 +3,7 @@
 
 :root {
     --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
 }
 
 html {
@@ -11,8 +12,39 @@ html {
 
 .container-fluid {
     max-width: 1440px;
-    margin: auto;
 }
+
+nav.navbar {
+    position: absolute;
+    left: 2%;
+    right: 2%;
+}
+
+.nav-item a.nav-link {
+    border-radius: 25px;
+    margin: 0 15px;
+    padding: 10px 25px;
+    color: var(--white);
+}
+
+.nav-item a.nav-link.colors {
+    color: var(--white);
+    transition: background-color linear 0.3s;
+}
+
+.nav-item a.nav-link.colors:hover {
+    color: var(--black);
+    background-color: var(--white);
+    text-transform: uppercase;
+}
+
+.nav-item a.nav-link.colors.active {
+    color: var(--white);
+    text-transform: uppercase;
+    background-color: hsla(0, 0%, 100%, 0.3);
+}
+
+
 .header {
     position: relative;
     
@@ -22,19 +54,21 @@ img {width: 100%;}
 
 h1 {
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, 0%);
+    width: 100%;
     font-family: 'Fraunces';
     text-transform: uppercase;
     letter-spacing: 5px;
     color: var(--white);
+    text-align: center;
 }
 
 h1 img {
     display: block;
     width: 35px;
     margin: auto;
-    margin-top: 130px;
+    margin-top: 5%;
 }
 
