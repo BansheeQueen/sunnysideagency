@@ -14,11 +14,11 @@
     --dmcyan: hsl(168, 34%, 41%);
 }
 
-
+.mobile {display: none;}
 .container-fluid {
     max-width: 1440px;
-    min-width: 1080px;
-    padding: 0; }
+    padding: 0;
+}
 
 nav.navbar {
     position: absolute;
@@ -157,7 +157,7 @@ a.pink:hover:after {
 }
 
 .desc, .desc2 {
-    padding: 10%!important;
+    padding: 8%!important;
 }
 
 .desc p, .desc2 p {
@@ -230,3 +230,27 @@ a.links {
 }
 
 a.links:hover {color: var(--white)}
+
+@media screen and (max-width: 990px) {
+    .container-fluid {width: 100%;}
+    .row.reverse {
+        flex-direction: column-reverse;
+    }
+
+    .desktop {display: none;}
+    .mobile {display: block;}
+
+    h1 {top: 40%;}
+
+    .card-group {flex-direction: column!important;}
+
+    img.footer {width: 30%;
+    margin-top: 10%;
+    margin-bottom: 4%;}
+
+    img.icon {
+        margin: 4% 1%;
+    margin-bottom: 10%;
+    }
+}
+
