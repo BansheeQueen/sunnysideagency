@@ -6,11 +6,15 @@
     --black: hsl(0, 0%, 0%);
     --yellow: hsl(51, 100%, 49%);
     --red: hsl(7, 99%, 70%);
+    --dgblue: hsl(232, 10%, 55%);
+    --dcyan: hsl(167, 40%, 24%);
+    --dblue: hsl(198, 62%, 26%);
 }
 
 
 .container-fluid {
     max-width: 1440px;
+    min-width: 1080px;
     padding: 0; }
 
 nav.navbar {
@@ -133,3 +137,23 @@ a.pinkgit :hover:after {
 .desc, .desc2 {
     padding: 10%!important;
 }
+
+.desc p, .desc2 p {
+    color: hsl(232, 10%, 55%);
+    font-weight: 600;
+}
+
+h2.position-absolute {
+    top: 65%;
+    text-align: center;
+    width: 100%;
+}
+
+p.position-absolute {
+    top: 75%;
+    text-align: center;
+    margin: 0 15%;
+}
+
+.green {color: var(--dcyan); font-weight: 600;}
+.blue {color: var(--dblue); font-weight: 600;}
