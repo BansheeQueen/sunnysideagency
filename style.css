@@ -6,9 +6,6 @@
     --black: hsl(0, 0%, 0%);
 }
 
-html {
-    font-size: 20px;
-}
 
 .container-fluid {
     max-width: 1440px;

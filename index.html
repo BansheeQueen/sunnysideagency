@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -22,20 +20,31 @@
     <div class="row">
       <div class="col-12 header">
         <nav class="navbar navbar-expand-lg navbar-light">
-          <a href="" class="navbar-brand"><img src="./images/logo.svg" alt="brand"></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a href="" class="nav-link colors active">About</a></li>
-              <li class="nav-item"><a href="" class="nav-link colors">Services</a></li>
-              <li class="nav-item"><a href="" class="nav-link colors">Projects</a></li>
-              <li class="nav-item"><a href="" class="nav-link colors">Contact</a></li> 
-            </ul>
+          <div class="container-fluid">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="#"><img src="./images/logo.svg" alt="brand"></a>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active colors" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link colors" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link colors" href="#">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link colors" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
-        <h1>We are creatives
+        
+        <h1 class="display-1">We are creatives
         <img src="./images/icon-arrow-down.svg" alt="arrow">
         </h1>
         <img src="./images/desktop/image-header.jpg" alt="logo" class="desktop">
@@ -112,4 +121,6 @@
   </div>
 </body>
 <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
 </html>
