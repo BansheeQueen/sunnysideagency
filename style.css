@@ -9,12 +9,14 @@
 
 .container-fluid {
     max-width: 1440px;
-}
+    padding: 0; }
 
 nav.navbar {
     position: absolute;
     left: 2%;
     right: 2%;
+    font-weight: 600;
+    font-family: 'Barlow';
 }
 
 .nav-item a.nav-link {
@@ -35,7 +37,7 @@ nav.navbar {
     text-transform: uppercase;
 }
 
-.nav-item a.nav-link.colors.active {
+.nav-item a.nav-link.colors:focus {
     color: var(--white);
     text-transform: uppercase;
     background-color: hsla(0, 0%, 100%, 0.3);
@@ -64,8 +66,20 @@ h1 {
 
 h1 img {
     display: block;
-    width: 35px;
+    width: 30px;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
+.row {
+    align-items: center;
+    background-color: hsla(51, 100%, 49%, 0.05);
+}
+
+.row a, .row p, .row h2 {
+    padding: 0px 20%;
+}
+
+.desc img {width: 100%;}
+
+.col, .col-6, .col-12 {margin: 0!important; padding: 0!important}
