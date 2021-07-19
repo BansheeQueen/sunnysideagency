@@ -21,6 +21,18 @@
     flex-wrap: wrap!important;
 }
 
+#header {
+    opacity: 0;
+    transition: all .5s;
+    transform: translateX(-30%) scale(0.95);
+  }
+  
+ #header.active {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+
+
 nav.navbar {
     position: absolute;
     left: 2%;
@@ -190,6 +202,15 @@ p.position-absolute {
 img.card-img-top {
     border-radius: 100%!important;
     padding: 10% 37%;
+    animation: ease-in-out 3s float infinite;
+}
+
+.card:first-child img.card-img-top {
+    animation-delay: 1s;
+}
+
+.card:last-child img.card-img-top  {
+    animation-delay: 2s;
 }
 
 .card-text {color: var(--vdgblue);
@@ -312,5 +333,18 @@ color: var(--vdblue);}
     .navbar-toggler:focus {box-shadow: none!important;
     }
     
+}
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 
